@@ -10,7 +10,11 @@ public class Solution {
 
 	public static void main(String[] args) {
 		in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+		int T = readInt();
 
+		for (int x = 1; x <= T; x++) {
+
+		}
 	}
 
 	/**
@@ -55,6 +59,23 @@ public class Solution {
 
 	private static void out(Object s) {
 		System.out.println(s);
+	}
+
+	/**
+	 * Checks if a given long is a palindrome by reversing it.
+	 */
+	private static boolean isPalindrome(long l) {
+		int num = i;
+		int reverse = 0;
+		while (num > 0) {
+			reverse = reverse * 10 + num % 10;
+			num /= 10;
+		}
+		if (reverse == i) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	/**
